@@ -19,7 +19,7 @@ jobs:
      run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         echo 'running build...'
-        docker image build -t hellow .
+        docker image build -t hellowdocker/hellow .
         echo 'pushing image ..'
-        docker push hellow
+        docker push hellowdocker/hellow
         echo ' done '
