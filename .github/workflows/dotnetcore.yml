@@ -1,25 +1,21 @@
-name: .NET Core
+name: Docker Series Builds
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    env:
-     DOCKER_USER: ${{ secrets.DOCKER_USER }}   
-     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }} 
-     run: |
+    - name: docker login
+      env:
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}   
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}  
+      run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-        echo 'running build...'
-        docker build . -t umardrazdotnet/hellowdocker:init
-        echo 'pushing image ..'
-        docker push umardrazdotnet/hellowdocker:init
-        echo ' done '
+    - name: docker build csharp
+      run: |
+        docker build . -t umardrazdotnet/hellowdocker:1.0.0
+    - name: docker push
+      run: |
+        docker push umardrazdotnet/hellowdocker:1.0.0
