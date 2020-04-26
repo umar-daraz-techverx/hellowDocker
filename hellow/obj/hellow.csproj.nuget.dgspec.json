@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/ec2-user/dockerwork/hellow/hellow.csproj": {}
+    "C:\\Users\\Umer\\Desktop\\hellowDocker\\hellow\\hellow.csproj": {}
   },
   "projects": {
-    "/home/ec2-user/dockerwork/hellow/hellow.csproj": {
+    "C:\\Users\\Umer\\Desktop\\hellowDocker\\hellow\\hellow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ec2-user/dockerwork/hellow/hellow.csproj",
+        "projectUniqueName": "C:\\Users\\Umer\\Desktop\\hellowDocker\\hellow\\hellow.csproj",
         "projectName": "hellow",
-        "projectPath": "/home/ec2-user/dockerwork/hellow/hellow.csproj",
-        "packagesPath": "/home/ec2-user/.nuget/packages/",
-        "outputPath": "/home/ec2-user/dockerwork/hellow/obj/",
+        "projectPath": "C:\\Users\\Umer\\Desktop\\hellowDocker\\hellow\\hellow.csproj",
+        "packagesPath": "C:\\Users\\Umer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Umer\\Desktop\\hellowDocker\\hellow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ec2-user/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Umer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +47,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -53,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.2.20176.6\\RuntimeIdentifierGraph.json"
         }
       }
     }

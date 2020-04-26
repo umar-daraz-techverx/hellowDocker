@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "K7MUDeuEMeVntF6RFjyRjDm2CL8K9cyumK5nVuSeS53FVZ7VFpecQAro5aOqmtTnLhbJJzbEQ+ucom0hYFUo3Q==",
+  "dgSpecHash": "CauXPG48UGHHHJ7hvZFNogB5DcvVciIwFiDRtuCoeAp60zGF7rnjAq3xm/D6f/SpAdMNbsd8FebMCLPHCF/4RA==",
   "success": true,
-  "projectFilePath": "/home/ec2-user/dockerwork/hellow/hellow.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Umer\\Desktop\\hellowDocker\\hellow\\hellow.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Umer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512",
+    "C:\\Users\\Umer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.2\\microsoft.netcore.app.host.win-x64.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
