@@ -21,7 +21,7 @@ namespace hellow
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseKestrel(option => { option.Listen(IPAddress.Any, 80); });
+                    webBuilder.UseKestrel(option => { option.Listen(IPAddress.Any, 8089); });
                     webBuilder.UseStartup<Startup>();
                 });
     }
